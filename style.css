@@ -130,10 +130,7 @@ p {
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: relative;
     z-index: 1000;
     background: rgba(12, 12, 13, 0.82);
     backdrop-filter: blur(12px);
@@ -145,6 +142,7 @@ p {
     align-items: center;
     justify-content: space-between;
     min-height: 84px;
+    position: relative;
 }
 
 .logo {
@@ -220,7 +218,6 @@ p {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 140px;
     overflow: hidden;
 }
 
@@ -666,11 +663,6 @@ p {
 }
 
 @media (max-width: 760px) {
-    .nav-bar {
-        justify-content: center;
-        gap: 1rem;
-    }
-
     .nav-toggle {
         display: flex;
         position: absolute;
@@ -679,7 +671,7 @@ p {
 
     .nav-menu {
         position: absolute;
-        top: 84px;
+        top: 100%;
         left: 16px;
         right: 16px;
         background: rgba(12, 12, 13, 0.98);
@@ -700,9 +692,6 @@ p {
         transform: translateY(0);
     }
 
-    .hero {
-        padding-top: 120px;
-    }
 
     .hero-buttons {
         flex-direction: column;
